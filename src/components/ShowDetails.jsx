@@ -42,12 +42,12 @@ const ShowDetails = () => {
       email: formData.email,
       showName: formData.showName,
       showId: formData.showId,
-      timestamp: Date.now(), // Add a timestamp to track when the booking was made
+      timestamp: Date.now(), 
     };
     const updatedBookingData = [...existingBookingData, newBookingData];
-    // Save the form data to local storage
+
     localStorage.setItem("bookingData", JSON.stringify(updatedBookingData));
-    // Navigate to the booking page
+
     navigate(`/`);
   };
 
